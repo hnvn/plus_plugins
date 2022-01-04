@@ -15,6 +15,7 @@ Downloaded by pub (not CocoaPods).
   s.source           = { :http => 'https://github.com/flutter/plugins/tree/main/packages/share' }
   s.documentation_url = 'https://pub.dev/packages/share'
   s.source_files = 'Classes/**/*'
+  s.resources = ["Assets/*.xcassets"]
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.ios.weak_framework = 'LinkPresentation'

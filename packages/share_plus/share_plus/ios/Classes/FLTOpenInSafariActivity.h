@@ -5,8 +5,7 @@
 //  Created by Ha Hung on 04/01/2022.
 //
 
-#ifndef FLTOpenInSafariActivity_h
-#define FLTOpenInSafariActivity_h
+#import <UIKit/UIKit.h>
 
-
-#endif /* FLTOpenInSafariActivity_h */
+@interface FLTOpenInSafariActivity : UIActivity
+@end

@@ -4,6 +4,7 @@
 
 #import "FLTSharePlusPlugin.h"
 #import "LinkPresentation/LPLinkMetadata.h"
+#import "FLTOpenInSafariActivity.h"
 
 static NSString *const PLATFORM_CHANNEL = @"dev.fluttercommunity.plus/share";
 
@@ -198,7 +199,7 @@ static UIViewController *TopViewControllerForViewController(UIViewController *vi
     withController:(UIViewController *)controller
           atSource:(CGRect)origin {
   UIActivityViewController *activityViewController =
-      [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
+      [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:@[ [FLTOpenInSafariActivity new] ]];
   activityViewController.popoverPresentationController.sourceView = controller.view;
   if (!CGRectIsEmpty(origin)) {
     activityViewController.popoverPresentationController.sourceRect = origin;
